@@ -1,0 +1,42 @@
+.about {
+  background: $secondary;
+  color: #fff;
+
+  .row {
+    justify-content: center;
+  }
+
+  ol {
+    counter-reset: list-number;
+  }
+
+  ol li:before {
+    counter-increment: list-number;
+    content: counter(list-number);
+    margin: 0 1.5rem 1.5rem 0;
+    padding-left: 1px;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background: $primary;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .col-auto:nth-child(2) {
+    transform: translateX(-3.1rem);
+  }
+}
+
+@media (max-width: 350px) {
+  .about {
+    .row {
+      justify-content: start;
+    }
+
+    .col-auto:nth-child(2) {
+      transform: translateX(0);
+    }
+  }
+}

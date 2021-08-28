@@ -1,0 +1,176 @@
+.navbar {
+  background: $primary;
+  padding: 1.2rem 1rem;
+  position: fixed;
+  width: 100vw;
+  z-index: 10;
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .nav-link {
+    color: #fff;
+  }
+
+  &__brand {
+    font-size: 1.8rem;
+    color: #fff;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    margin-left: auto;
+
+    .nav-toggle {
+      position: relative;
+
+      &,
+      &::before,
+      &::after {
+        display: inline-block;
+        width: 2.2rem;
+        height: 2px;
+        background-color: #000;
+      }
+
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        transition: all 0.3s;
+      }
+
+      &::before {
+        top: -0.7rem;
+      }
+
+      &::after {
+        top: 0.7rem;
+      }
+
+      &.nav-toggle--cross {
+        & {
+          background-color: transparent;
+        }
+        &::before {
+          top: 0;
+          transform: rotate(135deg);
+        }
+        &::after {
+          top: 0;
+          transform: rotate(-135deg);
+        }
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    font-size: 1.6rem;
+    flex: 0 0 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+
+    .nav-item {
+      cursor: pointer;
+      padding: 0.8rem 0;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background-color: $light-grey;
+        padding-left: 1.2rem;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 1.2rem;
+      }
+    }
+  }
+}
+
+.navbar.active {
+  .navbar__list {
+    max-height: 250px;
+    margin-top: 0.8rem;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .navbar {
+    padding: 1.8rem 0;
+
+    &__btn {
+      display: none;
+    }
+
+    &__list {
+      min-height: 22px;
+      flex-direction: row;
+      margin-top: 0;
+      margin-left: auto;
+      flex: 0 0 auto;
+      overflow: visible;
+
+      .nav-item {
+        padding: 0;
+
+        &:not(:last-child) {
+          margin-right: 3rem;
+          margin-bottom: 0;
+        }
+
+        &:hover {
+          background-color: transparent;
+          padding-left: 0;
+        }
+      }
+
+      .nav-link {
+        position: relative;
+
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: -0.4rem;
+          left: 0;
+          right: 0;
+          margin: auto;
+          width: 0;
+          height: 2.5px;
+          background-color: #fff;
+          transition: all 0.3s ease-out;
+        }
+
+        &:hover,
+        &.active {
+          &::after {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    // Deselect other nav items
+    .navbar__list:hover .nav-item:not(:hover) {
+      .nav-link::after {
+        width: 0;
+      }
+    }
+  }
+}

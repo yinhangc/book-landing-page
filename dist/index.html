@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <title>Think Like A Monk</title>
+  </head>
+
+  <body>
+    <!-- NavBar -->
+    <nav class="navbar">
+      <div class="container">
+        <a href="#home" class="navbar__brand">Think Like A Monk</a>
+        <div class="navbar__btn">
+          <span class="nav-toggle"></span>
+        </div>
+        <ul class="navbar__list">
+          <li class="nav-item">
+            <a href="#home" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#pricing" class="nav-link">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a href="#reviews" class="nav-link">Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a href="#author" class="nav-link">Author</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Home -->
+    <section class="home" id="home">
+      <div class="container">
+        <div class="row">
+          <div class="home__img-container col-md-5">
+            <img src="img/book-cover.png" alt="Book cover" />
+          </div>
+          <div class="col-md-7 home__text-container">
+            <h1>
+              <span>TRAIN YOUR MIND for</span>
+              <span>PEACE & PURPOSE</span>
+              <span>EVERY DAY</span>
+            </h1>
+            <p>
+              <span>Jay Shetty</span>, social media superstar and host of the #1
+              podcast On Purpose, distills the timeless wisdom he learned as a
+              monk into practical steps anyone can take every day to live a less
+              anxious, more meaningful life.
+            </p>
+            <a
+              href="https://www.amazon.com/Think-Like-Monk-Train-Purpose/dp/1982134488"
+              class="btn"
+              >BUY NOW</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+      <div class="container">
+        <h2>Via this book, you'll learn...</h2>
+        <ol class="row">
+          <div class="col-auto">
+            <li>How to overcome negativity</li>
+            <li>How to stop overthinking</li>
+            <li>Why comparison kills love</li>
+            <li>How to use your fear</li>
+            <li>Why you can’t find happiness by looking for it</li>
+          </div>
+          <div class="col-auto">
+            <li>How to learn from everyone you meet</li>
+            <li>Why you are not your thoughts</li>
+            <li>How to find your purpose</li>
+            <li>Why kindness is crucial to success</li>
+          </div>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing" id="pricing">
+      <div class="container">
+        <h2>Pricing</h2>
+        <div class="row gx-5">
+          <div class="col-md-4">
+            <img src="img/kindle-cover.png" alt="Book cover on kindle" />
+            <h3>Kindle</h3>
+            <p>85 HKD</p>
+          </div>
+          <div class="col-md-4">
+            <img src="img/book-cover.png" alt="Book cover on hardcover" />
+            <h3>Hardcover</h3>
+            <p>109 HKD</p>
+          </div>
+          <div class="col-md-4">
+            <img src="img/phone-cover.png" alt="Book cover on phone" />
+            <h3>Audiobook</h3>
+            <p>160 HKD</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Form -->
+    <section class="form">
+      <div class="container">
+        <div class="row gx-2">
+          <div class="col-md-6 form__img-container">
+            <img
+              src="img/tablet-mockup.png"
+              alt="Preview of bonus workshop"
+              data-bs-toggle="modal"
+              data-bs-target="#videoModal"
+            />
+          </div>
+          <div class="col-md-6 form__form-container">
+            <h3>
+              Buy the book now to get complete access to Jay's bonus workshop!
+            </h3>
+            <form>
+              <input type="text" placeholder="Name" required />
+              <input type="text" placeholder="Email address" required />
+              <input type="text" placeholder="Book Order No." required />
+              <button type="submit">SUBMIT</button>
+            </form>
+          </div>
+          <p class="form__reminder">Click to view the sample workshop!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="reviews" id="reviews">
+      <div class="container">
+        <h2>Reviews</h2>
+        <div class="row g-5">
+          <div class="col-md-6 col-lg-4 d-flex">
+            <div class="reviews__card">
+              <img src="img/ellen.jpeg" alt="Ellen's portrait" />
+              <h3>Ellen Degeneres</h3>
+              <p class="reviews__job">
+                Television host, actress, writer, producer
+              </p>
+              <p class="reviews__comment">
+                Who better to help you find meaning in your life than a monk?
+                Jay’s experience and wisdom are invaluable to anyone looking to
+                improve their life and reach their full potential.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 d-flex">
+            <div class="reviews__card">
+              <img src="img/novak.jpeg" alt="Novak's portrait" />
+              <h3>Novak Djokovic</h3>
+              <p class="reviews__job">World No.1 professional tennis player</p>
+              <p class="reviews__comment">
+                Jay has made a fascinating journey, from classroom to ashram to
+                finance and now entrepreneurship. I love how he’s brought his
+                experience, teachings and love for conscious, purposeful living
+                to millions of people around the world. This book is a clear and
+                powerful guide to achieving a balanced life.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 d-flex">
+            <div class="reviews__card">
+              <img src="img/arianna.jpeg" alt="Arianna's portrait" />
+              <h3>Arianna Huffington</h3>
+              <p class="reviews__job">Founder of The Huffington Post</p>
+              <p class="reviews__comment">
+                Jay Shetty has a rare gift for tapping into the world’s timeless
+                wisdom and making it timely by infusing everyday moments with
+                meaning and grace. He’s already shared glimmers of that wisdom
+                with millions on social media, but here he gathers it all into
+                one life-changing volume. Read this book to open your mind, lift
+                your heart, redefine success, and connect with your deeper
+                purpose.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 d-flex">
+            <div class="reviews__card">
+              <img src="img/robert.jpeg" alt="Robert's portrait" />
+              <h3>Robert Waldinger, MD</h3>
+              <p class="reviews__job">
+                Professor of Psychiatry, Harvard Medical School
+              </p>
+              <p class="reviews__comment">
+                Grab this book, find a comfortable chair, and let Jay Shetty
+                take you on a life-changing journey. Jay guides us with warmth
+                and clarity on a path to greater joy and purpose, offering
+                wisdom that can be put into practice right now. You will want to
+                share it with everyone you love.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 d-flex">
+            <div class="reviews__card">
+              <img src="img/brian.jpeg" alt="Brian's portrait" />
+              <h3>Robert Waldinger, MD</h3>
+              <p class="reviews__job">
+                Oscar-winning producer & New York Times bestselling author
+              </p>
+              <p class="reviews__comment">
+                This is a life-changing book whose time is now. In our
+                fast-paced, digitized world, every calibration we make matters.
+                Jay’s compelling story offers a unique perspective on life that
+                helped me clarify and redefine my own personal pathway to
+                happiness and success. This is definitely one of the most
+                beneficial books I have ever read.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 d-flex">
+            <div class="reviews__card">
+              <img src="img/payal.jpeg" alt="Payal's portrait" />
+              <h3>Payal Kadakia</h3>
+              <p class="reviews__job">
+                Founder and Executive Chairman, ClassPass
+              </p>
+              <p class="reviews__comment">
+                This book is an incredible source of wisdom about how to live a
+                life full of peace and purpose. Jay’s stories, studies and
+                insights have given me new techniques to live and protect my
+                dharma, to act with intention by knowing my deepest “why,” and
+                to declutter and focus my mind so I can be more present in my
+                daily life.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Author -->
+    <section class="author" id="author">
+      <div class="container">
+        <h2>ABOUT THE AUTHOR</h2>
+        <div class="row">
+          <div class="col-md-5 order-md-2">
+            <img src="img/author.png" alt="Author's portrait" />
+          </div>
+          <div class="col-md-7 order-md-1">
+            <p>
+              Jay Shetty’s vision is to Make Wisdom Go Viral. He is on a mission
+              to share the timeless wisdom of the world in an accessible,
+              relevant and practical way. He has produced over 400 viral videos
+              which have surpassed more than 7 billion views, and his podcast,
+              On Purpose is consistently ranked as the #1 Health podcast in the
+              world. He was named in the Forbes 30 Under 30 Class of 2017 for
+              being a game changer in the world of media and has won both the
+              Streamy and Shorty Awards for Best Health and Wellness Creator of
+              the Year 2018.
+            </p>
+            <div class="author__icons-container">
+              <a
+                href="https://www.youtube.com/channel/UCbV60AGIHKz2xIGvbk0LLvg"
+              >
+                <svg>
+                  <use xlink:href="img/sprite.svg#icon-youtube2"></use>
+                </svg>
+              </a>
+              <a href="https://www.facebook.com/JayShettyIW/">
+                <svg>
+                  <use xlink:href="img/sprite.svg#icon-facebook2"></use>
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/jayshetty/">
+                <svg>
+                  <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+              <a href="https://twitter.com/jayshettyiw">
+                <svg>
+                  <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+              <a href="https://www.linkedin.com/in/shettyjay/">
+                <svg>
+                  <use xlink:href="img/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <p>© 2021 by Emily. All rights reserved.</p>
+          <p>
+            (Reference To:
+            <a href="https://thinklikeamonkbook.com/"> Think Like A Monk</a>)
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal for the video -->
+    <div class="modal fade" id="videoModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <iframe
+              src="https://www.youtube.com/embed/fG3EUMArrU0"
+              height="315"
+              width="100%"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+.author {
+  background: $secondary;
+  color: #fff;
+  padding-bottom: 0;
+  position: relative;
+
+  .row {
+    min-height: 450px;
+    align-items: center;
+    text-align: center;
+  }
+
+  img {
+    width: 280px;
+    border: 1px solid $primary;
+    border-radius: $regular-br;
+    box-shadow: $regular-shadow;
+    background: $primary;
+    margin-bottom: 2.5rem;
+  }
+
+  p {
+    line-height: 1.5;
+    font-size: 1.7rem;
+    margin-bottom: 3rem;
+  }
+
+  a {
+    cursor: pointer;
+
+    &:first-child {
+      svg {
+        width: 6rem;
+        margin-top: 1px;
+      }
+    }
+
+    &:last-child {
+      svg {
+        margin-right: 0;
+      }
+    }
+
+    &:hover {
+      svg {
+        fill: $primary;
+      }
+    }
+  }
+
+  svg {
+    fill: #fff;
+    height: 3rem;
+    width: 3rem;
+    margin-right: 3rem;
+    transition: all 0.3s;
+  }
+
+  &__icons-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .author {
+    .row {
+      text-align: left;
+    }
+
+    img {
+      width: 460px;
+      height: auto;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      border: none;
+      box-shadow: none;
+      background: transparent;
+      margin-bottom: 0;
+    }
+
+    &__icons-container {
+      justify-content: start;
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .author {
+    img {
+      width: 530px;
+    }
+  }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .author {
+    .row {
+      min-height: 490px;
+    }
+    img {
+      width: 600px;
+    }
+  }
+}
